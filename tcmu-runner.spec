@@ -38,8 +38,7 @@ License:       ASL 2.0 or LGPLv2+
 Version:       1.5.2
 URL:           https://github.com/open-iscsi/tcmu-runner
 
-#%define _RC
-Release:       %{?_RC:%{_RC}}%{dist}
+Release:       1%{dist}
 BuildRoot:     %(mktemp -udp %{_tmppath}/%{name}-%{version}%{?_RC:-%{_RC}})
 Source:       %{name}-%{version}%{?_RC:-%{_RC}}.tar.gz
 ExclusiveOS:   Linux
